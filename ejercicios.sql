@@ -168,3 +168,13 @@ SELECT nombre, telefono FROM Usuarios WHERE marca NOT IN('MOTOROLA', 'NOKIA');
 
 48-Calcular la suma de los saldos de los usuarios de la compañía telefónica TELCEL
 SELECT SUM(saldo) FROM Usuarios WHERE compania = 'TELCEL';
+
+49-¿Que provincias no contienen clientes?
+SELECT provincias.nombre FROM provincias LEFT JOIN clientes 
+  ON clientes.codigoProvincia=provincias.codigo
+  WHERE clientes.codigoprovincia IS null;
+
+50-¿Qué provincias tienen clientes? Pero sin repetir el nombre de la provincia.
+SELECT provincias.nombre FROM provincias LEFT JOIN clientes 
+  ON clientes.codigoProvincia=provincias.codigo
+  WHERE clientes.codigoprovincia ;

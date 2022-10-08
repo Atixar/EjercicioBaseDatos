@@ -45,7 +45,7 @@ CREATE TABLE `usuarios` (
 -- Volcado de datos para la tabla `Usuarios`
 --
 
-INSERT INTO `Usuarios` (`telefono`) VALUES
+SELECT telefono FROM Usuarios WHERE saldo <=300;
 ('655-330-5736'),
 ('655-143-4181'),
 ('655-143-3922'),

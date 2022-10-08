@@ -45,7 +45,7 @@ CREATE TABLE `usuarios` (
 -- Volcado de datos para la tabla `Usuarios`
 --
 
-INSERT INTO `Usuarios` (`marca`, `COUNT(*)`) VALUES
+SELECT marca, COUNT(*) FROM Usuarios GROUP BY marca;
 (BLACKBERRY, 4),
 (LG, 3),
 (MOTOROLA, 4),
